@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestor de Notas - UX/UI</title>
+    <link rel="stylesheet" href="testilos.css" />
+  </head>
+  <body>
+    <main class="tarjeta">
+      <h1>Mis Notas</h1>
+      <p class="ayuda">Organiza tus apuntes de forma rápida y accesible.</p>
+
+      <form id="form-nota">
+        <label for="titulo-nota">Título de la nota</label>
+        <input
+          type="text"
+          id="titulo-nota"
+          placeholder="Ej. Compras del súper"
+          required
+        />
+
+        <label for="contenido-nota">Contenido</label>
+        <textarea
+          id="contenido-nota"
+          rows="3"
+          placeholder="Escribe los detalles aquí..."
+          required
+        ></textarea>
+
+        <div class="acciones">
+          <button type="submit" class="boton-principal">Agregar Nota</button>
+          <button type="reset" class="boton-secundario">Limpiar</button>
+        </div>
+      </form>
+
+      <p id="mensaje-estado" class="mensaje" role="status"></p>
+
+      <section aria-label="Lista de notas">
+        <h2>Notas guardadas</h2>
+        <ul id="lista-notas">
+          <!-- Las notas se agregarán aquí dinámicamente -->
+        </ul>
+      </section>
+    </main>
+    <script src="tapp.js"></script>
+  </body>
+</html>
