@@ -1,0 +1,24 @@
+# Taller UX
+
+Formulario de inscripcion redisenado aplicando principios de UX/UI.
+
+Pagina publicada: https://melanychoquehuanca-beep.github.io/taller-ux/
+
+App de notas (tarea): https://melanychoquehuanca-beep.github.io/taller-ux/notas/
+
+Auditoria UX: [docs/AUDITORIA-UX.md](docs/AUDITORIA-UX.md)
+
+## Cambios aplicados
+
+| Principio | Cambio |
+|-----------|--------|
+| Visibilidad del estado | Mensaje de envio, de error y de exito |
+| Prevencion de errores | Campos obligatorios y validacion del correo |
+| Control y libertad | Confirmacion antes de limpiar el formulario |
+| Ley de Fitts | Boton principal grande y separado de Limpiar |
+| Ley de Hick | Talleres agrupados por categoria |
+| Accesibilidad | Labels, texto alternativo, contraste y foco visible |
+
+## Autora
+
+Melany Grisse Choquehuanca Cahui · Grupo E
