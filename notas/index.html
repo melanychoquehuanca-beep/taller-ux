@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mis notas</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<main class="tarjeta">
+<img src="../img/banner.png" alt="Banner del taller de UX y notas">
+<h1>Mis notas</h1>
+<p class="ayuda">Escribe un título y un contenido. No se permiten notas vacías.</p>
+<form id="form-nota" novalidate>
+<label for="titulo-nota">Título de la nota</label>
+<input id="titulo-nota" type="text" autocomplete="off" required>
+<label for="contenido-nota">Contenido</label>
+<textarea id="contenido-nota" rows="3" required></textarea>
+<p id="mensaje-estado" class="mensaje" role="status"></p>
+<div class="acciones">
+<button type="submit" class="boton-principal">Agregar nota</button>
+<button type="reset" class="boton-secundario">Limpiar</button>
+</div>
+</form>
+<section aria-label="Lista de notas">
+<h2>Notas guardadas</h2>
+<ul id="lista-notas"></ul>
+</section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

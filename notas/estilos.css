@@ -1,0 +1,79 @@
+:root {
+--color-primario: #0b5cad;
+--color-texto: #1f2933;
+--color-suave: #52606d;
+--color-borde: #9aa5b1;
+--color-fondo: #f4f6f8;
+--color-error: #b42318;
+--color-exito: #067647;
+--espacio: 16px;
+}
+* { box-sizing: border-box; }
+body {
+margin: 0;
+padding: var(--espacio);
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+line-height: 1.5;
+color: var(--color-texto);
+background: var(--color-fondo);
+}
+.tarjeta {
+max-width: 520px;
+margin: 32px auto;
+padding: 32px;
+background: #fff;
+border-radius: 12px;
+box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+.tarjeta img { width: 100%; border-radius: 8px; }
+h1 { font-size: 28px; margin: 16px 0 4px; }
+h2 { font-size: 18px; margin: 28px 0 12px; }
+.ayuda { color: var(--color-suave); margin: 0 0 20px; }
+label { display: block; font-weight: bold; margin: 12px 0 4px; }
+input, textarea {
+width: 100%;
+min-height: 44px;
+padding: 8px 12px;
+font-size: 16px;
+border: 1px solid var(--color-borde);
+border-radius: 8px;
+font-family: inherit;
+}
+.validado input:invalid,
+.validado textarea:invalid { border: 2px solid var(--color-error); }
+.acciones { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 16px; }
+button {
+min-height: 44px;
+padding: 10px 20px;
+font-size: 16px;
+border-radius: 8px;
+cursor: pointer;
+}
+.boton-principal {
+flex: 1;
+background: var(--color-primario);
+color: #fff;
+border: none;
+font-weight: bold;
+}
+.boton-secundario {
+background: transparent;
+color: var(--color-suave);
+border: 1px solid var(--color-borde);
+}
+:focus-visible { outline: 3px solid #f59e0b; outline-offset: 2px; }
+.mensaje { min-height: 24px; font-weight: bold; margin: 12px 0 0; }
+.mensaje.error { color: var(--color-error); }
+.mensaje.exito { color: var(--color-exito); }
+.mensaje.info { color: var(--color-primario); }
+#lista-notas { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
+#lista-notas li {
+display: flex; justify-content: space-between; gap: 16px; align-items: flex-start;
+padding: 14px; border: 1px solid var(--color-borde); border-radius: 8px; background: #fafbfc;
+}
+#lista-notas strong { display: block; margin-bottom: 4px; }
+.btn-eliminar {
+min-height: 44px; background: #fff; color: var(--color-error);
+border: 1px solid var(--color-error); border-radius: 8px; padding: 8px 14px; cursor: pointer;
+}
